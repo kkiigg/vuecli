@@ -6,7 +6,7 @@
   </div>
 </template>
 <script>
-export default{
+export default {
   data () {
     return {
       count: 0
@@ -23,12 +23,13 @@ export default{
 }
 </script>
 <style lang="less">
-  div{
-    h1{
-      font-size:20px;
-    }
-    button{
-      width:100px;
-    }
+div {
+  transition: all 0.3s;
+  h1 {
+    font-size: 20px;
   }
+  button {
+    width: 100px;
+  }
+}
 </style>
