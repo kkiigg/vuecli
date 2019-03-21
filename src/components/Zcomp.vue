@@ -1,10 +1,11 @@
 <template>
   <div>
-    <h1>{{count}}</h1>
+    <h1 id="h">{{count}}</h1>
     <button @click="increase">+</button>
     <button @click="decrease">-</button>
   </div>
 </template>
+import $ from 'jquery'
 <script>
 export default {
   data () {
@@ -19,7 +20,11 @@ export default {
     decrease () {
       this.count--
     }
+  },
+  mounted () {
+    $('#h').addClass('haha')
   }
+
 }
 </script>
 <style lang="less">
