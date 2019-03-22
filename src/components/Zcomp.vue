@@ -3,10 +3,13 @@
     <h1 id="h">{{count}}</h1>
     <button @click="increase">+</button>
     <button @click="decrease">-</button>
+    <text-comp></text-comp>
   </div>
 </template>
-import $ from 'jquery'
+
 <script>
+import $ from 'jquery'
+import textComp from './text.vue'
 export default {
   data () {
     return {
@@ -23,6 +26,9 @@ export default {
   },
   mounted () {
     $('#h').addClass('haha')
+  },
+  components: {
+    textComp
   }
 
 }
